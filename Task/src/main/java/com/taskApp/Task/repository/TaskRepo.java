@@ -1,4 +1,7 @@
 package com.taskApp.Task.repository;
 
-public interface TaskRepo {
+import com.taskApp.Task.domain.Tasks;
+import org.springframework.data.repository.CrudRepository;
+
+public interface TaskRepo extends CrudRepository<Tasks,Long> {
 }
